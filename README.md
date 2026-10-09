@@ -9,6 +9,20 @@ NAS devices on your network.
 
 ![Network preferences and R SMB settings](docs/images/settings.png)
 
+## Compared with FuseSMB
+
+FuseSMB (`fusesmb_haiku`) is the older way to open shared folders on
+RenkuOS/HaikuOS.
+
+| | R SMB | FuseSMB |
+| --- | --- | --- |
+| Extra software | Nothing else to install | Needs the Samba package |
+| Finding computers | Searches your network and shows each computer by name | Lists computers through Windows workgroups (NetBIOS), sorted by workgroup |
+| Macs | Logs in with your normal Mac user name and password | Uses Samba's login |
+| A slow computer | Other computers keep working | Every computer waits, because all of them share one lock |
+| Saving | Can confirm that a file reached the server (fsync) | No fsync |
+| Last change | 2026 | 2022 |
+
 ## Install
 
 1. Open **Terminal**: click the feather menu at the top right of the screen,
@@ -50,3 +64,7 @@ NAS devices on your network.
 ## License
 
 MIT. Includes libsmb2 (GNU LGPL 2.1) and parts of Haiku (MIT).
+
+## AI disclosure
+
+This program was written with Claude.

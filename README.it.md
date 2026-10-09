@@ -9,6 +9,20 @@ Windows, Mac e dispositivi NAS della tua rete.
 
 ![Preferenze di rete e impostazioni di R SMB](docs/images/settings.png)
 
+## Confronto con FuseSMB
+
+FuseSMB (`fusesmb_haiku`) è il modo più vecchio per aprire le cartelle
+condivise su RenkuOS/HaikuOS.
+
+| | R SMB | FuseSMB |
+| --- | --- | --- |
+| Software in più | Nulla da installare | Serve il pacchetto Samba |
+| Ricerca dei computer | Cerca nella rete e mostra ogni computer per nome | Elenca i computer tramite i gruppi di lavoro Windows (NetBIOS), divisi per gruppo |
+| Mac | Accesso con il normale nome utente e password del Mac | Usa l'accesso di Samba |
+| Un computer lento | Gli altri computer continuano a funzionare | Tutti i computer aspettano, perché condividono un unico blocco |
+| Salvataggio | Può confermare che il file è arrivato al server (fsync) | Niente fsync |
+| Ultima modifica | 2026 | 2022 |
+
 ## Installazione
 
 1. Apri il **Terminale**: fai clic sul menu con la piuma in alto a destra,
@@ -49,3 +63,7 @@ Windows, Mac e dispositivi NAS della tua rete.
 ## Licenza
 
 MIT. Include libsmb2 (GNU LGPL 2.1) e parti di Haiku (MIT).
+
+## Dichiarazione sull'uso dell'IA
+
+Questo programma e' stato scritto con Claude.
