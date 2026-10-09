@@ -1,0 +1,20 @@
+# Build output
+build/
+deps/
+lib/
+dist/
+App.rsrc
+/RSMB
+/rsmb
+/RSMBNetwork
+/smb-tool
+/core-test
+/transfer-test
+*.hpkg
+__pycache__/
+.DS_Store
+
+# Local notes for agents (machines, accounts, test history)
+AGENTS.md
+# Old screenshots, no longer used by the README
+docs/

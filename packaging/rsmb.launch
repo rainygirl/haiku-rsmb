@@ -1,0 +1,5 @@
+# Remount the R SMB volume at login, unless it was turned off in
+# Preferences > Network > R SMB.
+job x-vnd.R-SMB-restore {
+	launch /boot/system/apps/RSMB/RSMB --restore
+}
