@@ -13,10 +13,21 @@ Windows PC、Mac、NAS の共有フォルダーを開けるようになります
 
 1. **ターミナル** を開きます。画面右上の羽根のメニューを押し、
    **アプリケーション > ターミナル** を押します。
-2. お使いのコンピューターに合う 3 行をコピーしてターミナルに貼り付け、
+2. コンピューターの種類を確かめます。ターミナルに `uname -m` と入力して
+   **Enter** を押してください。`x86_64` は 64 ビット、`BePC` は 32 ビット、
+   `arm64` は arm64 です。
+3. お使いのコンピューターに合う 3 行をコピーしてターミナルに貼り付け、
    **Enter** を押します。
 
-   **ほとんどの PC (32 ビット版 RenkuOS/HaikuOS):**
+   **64 ビット版 RenkuOS/HaikuOS:**
+
+   ```sh
+   pkgman add-repo https://pkgman.rainygirl.com/x86_64
+   pkgman refresh
+   pkgman install rsmb
+   ```
+
+   **32 ビット版 RenkuOS/HaikuOS:**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -32,11 +43,9 @@ Windows PC、Mac、NAS の共有フォルダーを開けるようになります
    pkgman install rsmb
    ```
 
-3. ターミナルに何か聞かれたら **y** を入力して **Enter** を押します。
-4. 終わるとデスクトップに **R SMB** のアイコンが現れます。ダブルクリックすると
+4. ターミナルに何か聞かれたら **y** を入力して **Enter** を押します。
+5. 終わるとデスクトップに **R SMB** のアイコンが現れます。ダブルクリックすると
    ネットワーク上のコンピューターが表示されます。
-
-64 ビット版 RenkuOS/HaikuOS (x86_64) にはまだ対応していません。
 
 ## ライセンス
 

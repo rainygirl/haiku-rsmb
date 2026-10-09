@@ -13,10 +13,21 @@ NAS devices on your network.
 
 1. Open **Terminal**: click the feather menu at the top right of the screen,
    then **Applications > Terminal**.
-2. Copy the three lines for your computer, paste them into Terminal, and
+2. Find out which kind your computer is: type `uname -m` in Terminal and
+   press **Enter**. `x86_64` means 64-bit, `BePC` means 32-bit, `arm64`
+   means arm64.
+3. Copy the three lines for your computer, paste them into Terminal, and
    press **Enter**.
 
-   **Most PCs (32-bit RenkuOS/HaikuOS):**
+   **64-bit RenkuOS/HaikuOS:**
+
+   ```sh
+   pkgman add-repo https://pkgman.rainygirl.com/x86_64
+   pkgman refresh
+   pkgman install rsmb
+   ```
+
+   **32-bit RenkuOS/HaikuOS:**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -32,11 +43,9 @@ NAS devices on your network.
    pkgman install rsmb
    ```
 
-3. If Terminal asks a question, type **y** and press **Enter**.
-4. When it finishes, an **R SMB** icon appears on the Desktop. Double-click
+4. If Terminal asks a question, type **y** and press **Enter**.
+5. When it finishes, an **R SMB** icon appears on the Desktop. Double-click
    it to see the computers on your network.
-
-64-bit RenkuOS/HaikuOS (x86_64) is not supported yet.
 
 ## License
 

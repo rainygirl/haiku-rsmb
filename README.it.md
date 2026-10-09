@@ -13,10 +13,20 @@ Windows, Mac e dispositivi NAS della tua rete.
 
 1. Apri il **Terminale**: fai clic sul menu con la piuma in alto a destra,
    poi su **Applicazioni > Terminale**.
-2. Copia le tre righe adatte al tuo computer, incollale nel Terminale e premi
+2. Scopri che tipo di computer hai: scrivi `uname -m` nel Terminale e premi
+   **Invio**. `x86_64` significa 64 bit, `BePC` 32 bit, `arm64` arm64.
+3. Copia le tre righe adatte al tuo computer, incollale nel Terminale e premi
    **Invio**.
 
-   **La maggior parte dei PC (RenkuOS/HaikuOS a 32 bit):**
+   **RenkuOS/HaikuOS a 64 bit:**
+
+   ```sh
+   pkgman add-repo https://pkgman.rainygirl.com/x86_64
+   pkgman refresh
+   pkgman install rsmb
+   ```
+
+   **RenkuOS/HaikuOS a 32 bit:**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -32,11 +42,9 @@ Windows, Mac e dispositivi NAS della tua rete.
    pkgman install rsmb
    ```
 
-3. Se il Terminale fa una domanda, scrivi **y** e premi **Invio**.
-4. Alla fine compare l'icona **R SMB** sulla Scrivania. Fai doppio clic per
+4. Se il Terminale fa una domanda, scrivi **y** e premi **Invio**.
+5. Alla fine compare l'icona **R SMB** sulla Scrivania. Fai doppio clic per
    vedere i computer della tua rete.
-
-RenkuOS/HaikuOS a 64 bit (x86_64) non è ancora supportato.
 
 ## Licenza
 
