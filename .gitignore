@@ -16,5 +16,3 @@ __pycache__/
 
 # Local notes for agents (machines, accounts, test history)
 AGENTS.md
-# Old screenshots, no longer used by the README
-docs/

@@ -5,6 +5,10 @@
 R SMB を入れると、Haiku から同じネットワークにある Windows PC、Mac、NAS の
 共有フォルダーを開けるようになります。
 
+![Tracker で見たネットワーク上のコンピューター](docs/images/tracker.png)
+
+![ネットワーク設定と R SMB の設定ウィンドウ](docs/images/settings.png)
+
 ## インストール
 
 1. **ターミナル** を開きます。画面右上の羽根のメニューを押し、

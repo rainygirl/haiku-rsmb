@@ -5,6 +5,10 @@
 R SMB를 설치하면 Haiku에서 같은 네트워크에 있는 Windows PC, Mac, NAS의 공유
 폴더를 열 수 있습니다.
 
+![Tracker에서 본 네트워크의 컴퓨터들](docs/images/tracker.png)
+
+![네트워크 설정과 R SMB 설정 창](docs/images/settings.png)
+
 ## 설치
 
 1. **터미널**을 엽니다. 화면 오른쪽 위의 깃털 메뉴를 누르고

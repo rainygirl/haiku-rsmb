@@ -5,6 +5,10 @@
 R SMB lets Haiku open the shared folders of Windows PCs, Macs and NAS
 devices on your network.
 
+![Computers on the network in Tracker](docs/images/tracker.png)
+
+![Network preferences and R SMB settings](docs/images/settings.png)
+
 ## Install
 
 1. Open **Terminal**: click the feather menu at the top right of the screen,
