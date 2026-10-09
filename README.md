@@ -2,8 +2,8 @@
 
 **English** · [한국어](README.ko.md) · [日本語](README.ja.md) · [Italiano](README.it.md) · [Français](README.fr.md)
 
-R SMB lets Haiku open the shared folders of Windows PCs, Macs and NAS
-devices on your network.
+R SMB lets RenkuOS/HaikuOS open the shared folders of Windows PCs, Macs and
+NAS devices on your network.
 
 ![Computers on the network in Tracker](docs/images/tracker.png)
 
@@ -16,7 +16,7 @@ devices on your network.
 2. Copy the three lines for your computer, paste them into Terminal, and
    press **Enter**.
 
-   **Most PCs (32-bit Haiku):**
+   **Most PCs (32-bit RenkuOS/HaikuOS):**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -36,7 +36,7 @@ devices on your network.
 4. When it finishes, an **R SMB** icon appears on the Desktop. Double-click
    it to see the computers on your network.
 
-64-bit Haiku (x86_64) is not supported yet.
+64-bit RenkuOS/HaikuOS (x86_64) is not supported yet.
 
 ## License
 

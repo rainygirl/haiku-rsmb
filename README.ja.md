@@ -2,8 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · **日本語** · [Italiano](README.it.md) · [Français](README.fr.md)
 
-R SMB を入れると、Haiku から同じネットワークにある Windows PC、Mac、NAS の
-共有フォルダーを開けるようになります。
+R SMB を入れると、RenkuOS/HaikuOS から同じネットワークにある
+Windows PC、Mac、NAS の共有フォルダーを開けるようになります。
 
 ![Tracker で見たネットワーク上のコンピューター](docs/images/tracker.png)
 
@@ -16,7 +16,7 @@ R SMB を入れると、Haiku から同じネットワークにある Windows PC
 2. お使いのコンピューターに合う 3 行をコピーしてターミナルに貼り付け、
    **Enter** を押します。
 
-   **ほとんどの PC (32 ビット版 Haiku):**
+   **ほとんどの PC (32 ビット版 RenkuOS/HaikuOS):**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -36,7 +36,7 @@ R SMB を入れると、Haiku から同じネットワークにある Windows PC
 4. 終わるとデスクトップに **R SMB** のアイコンが現れます。ダブルクリックすると
    ネットワーク上のコンピューターが表示されます。
 
-64 ビット版 Haiku (x86_64) にはまだ対応していません。
+64 ビット版 RenkuOS/HaikuOS (x86_64) にはまだ対応していません。
 
 ## ライセンス
 

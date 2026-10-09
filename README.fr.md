@@ -2,8 +2,8 @@
 
 [English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [Italiano](README.it.md) · **Français**
 
-R SMB permet à Haiku d'ouvrir les dossiers partagés des PC Windows, des Mac
-et des NAS de votre réseau.
+R SMB permet à RenkuOS/HaikuOS d'ouvrir les dossiers partagés des PC Windows,
+des Mac et des NAS de votre réseau.
 
 ![Les ordinateurs du réseau dans Tracker](docs/images/tracker.png)
 
@@ -16,7 +16,7 @@ et des NAS de votre réseau.
 2. Copiez les trois lignes qui correspondent à votre ordinateur, collez-les
    dans le Terminal et appuyez sur **Entrée**.
 
-   **La plupart des PC (Haiku 32 bits) :**
+   **La plupart des PC (RenkuOS/HaikuOS 32 bits) :**
 
    ```sh
    pkgman add-repo https://pkgman.rainygirl.com/x86_gcc2
@@ -36,7 +36,7 @@ et des NAS de votre réseau.
 4. À la fin, une icône **R SMB** apparaît sur le Bureau. Double-cliquez dessus
    pour voir les ordinateurs de votre réseau.
 
-Haiku 64 bits (x86_64) n'est pas encore pris en charge.
+RenkuOS/HaikuOS 64 bits (x86_64) n'est pas encore pris en charge.
 
 ## Licence
 
