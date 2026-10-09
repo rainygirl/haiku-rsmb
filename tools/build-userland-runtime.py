@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 """Build app-private modern-ABI userlandfs host from matching Haiku/Renku sources.
 The kernel addon remains the official userland_fs package. Run under setarch x86
-on hybrid Haiku; source files retain their original MIT licenses.
+on hybrid Haiku, natively on x86_64; source files retain their original MIT licenses.
 """
-import pathlib, subprocess, concurrent.futures, argparse
+import pathlib, subprocess, concurrent.futures, argparse, platform
 p=argparse.ArgumentParser(description=__doc__)
 p.add_argument('source',type=pathlib.Path)
 p.add_argument('--output',type=pathlib.Path,default=pathlib.Path('deps/userland-runtime'))
 a=p.parse_args(); source=a.source.resolve(); top=source/'src/add-ons/kernel/file_systems/userlandfs'; out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
 h=source/'headers'
 flags=['-O1','-fPIC','-D_DEFAULT_SOURCE','-DUSER=1','-DBUILDING_USERLAND_FS_SERVER=1','-D_FILE_OFFSET_BITS=64','-DPACKAGE_VERSION="2.9.9"']
-for d in [source/'build/user_config_headers',source/'build/config_headers',h/'private',top/'server',top/'server/fuse',top/'shared',top/'private',h/'private/userlandfs',h/'private/userlandfs/private',h/'private/userlandfs/shared',h/'private/userlandfs/fuse',h/'private/kernel',h/'private/kernel/arch/x86',h/'private/shared',h/'private/libroot',h/'private/system',h/'private/fs_shell',h/'private/storage',h/'private/app',h/'private/system/arch/x86']:
+for d in [source/'build/user_config_headers',source/'build/config_headers',h/'private',top/'server',top/'server/fuse',top/'shared',top/'private',h/'private/userlandfs',h/'private/userlandfs/private',h/'private/userlandfs/shared',h/'private/userlandfs/fuse',h/'private/kernel',h/'private/kernel/arch/x86',h/'private/shared',h/'private/libroot',h/'private/system',h/'private/fs_shell',h/'private/storage',h/'private/app',h/'private/system/arch'/('x86_64' if platform.machine()=='x86_64' else 'x86')]:
  flags += ['-iquote' if d in [h/'private/userlandfs/private',h/'private/userlandfs/shared'] else '-I', str(d)]
 server='AreaSupport Debug LazyInitializable ObjectTracker Port Request RequestAllocator RequestHandler RequestPort Requests SingleReplyRequestHandler String FileSystem kernel_emu main RequestThread ServerDefs UserlandFSServer UserlandRequestHandler Volume'.split()
 fuse='RWLockManager.cpp fuse_config.c fuse_fs.cpp fuse_main.cpp fuse_opt.c fuse_signals.c helper.c FUSEFileSystem.cpp FUSELowLevel.cpp FUSEVolume.cpp mime_ext_table.c'.split()

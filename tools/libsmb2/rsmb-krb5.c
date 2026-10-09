@@ -1127,7 +1127,8 @@ struct private_auth_data *krb5_negotiate_reply(struct smb2_context *smb2, const 
         if (!a)
                 return NULL;
         snprintf(a->user, sizeof(a->user), "%s", user_name);
-        if (login(smb2, a, server, password) < 0 || random_bytes(a->subkey, sizeof(a->subkey)) < 0
+        /* != 0, not < 0: Haiku's errno values are negative unless built with positive errors. */
+        if (login(smb2, a, server, password) != 0 || random_bytes(a->subkey, sizeof(a->subkey)) < 0
             || random_bytes((uint8_t *)&a->seq, 4) < 0) {
                 krb5_free_auth_data(a);
                 return NULL;
