@@ -1,7 +1,23 @@
 # haiku-rsmb
 
-[English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · [Italiano](README.it.md) · [Français](README.fr.md)
+**→ [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb)**
 
-**This repository has moved to [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb).**
+## English
 
-Haiku OS is no longer supported. The project is now maintained in step with RenkuOS releases. Please use the new repository for the source, issues and releases.
+This repository has moved to [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb). Haiku OS is no longer supported; the project is now maintained in step with RenkuOS releases. Please use the new repository for the source, issues and releases.
+
+## 한국어
+
+이 저장소는 [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb)로 옮겼습니다. Haiku OS를 더 이상 지원하지 않으며 RenkuOS 릴리즈에 맞추어 관리됩니다. 소스, 이슈, 릴리즈는 새 저장소를 이용해 주십시오.
+
+## 日本語
+
+このリポジトリは [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb) に移転しました。Haiku OS のサポートは終了し、RenkuOS のリリースに合わせて管理されています。ソース、Issue、リリースは新しいリポジトリをご利用ください。
+
+## Italiano
+
+Questo repository è stato spostato in [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb). Haiku OS non è più supportato: il progetto è ora mantenuto in linea con le release di RenkuOS. Per il codice sorgente, le segnalazioni e le release usate il nuovo repository.
+
+## Français
+
+Ce dépôt a été déplacé vers [renkuos-rsmb](https://github.com/rainygirl/renkuos-rsmb). Haiku OS n'est plus pris en charge : le projet est désormais maintenu au rythme des versions de RenkuOS. Pour les sources, les tickets et les versions, utilisez le nouveau dépôt.
